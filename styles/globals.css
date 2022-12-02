@@ -1,0 +1,659 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Oswald:wght@200;300;400;500;600;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-color {
+  color: #6db225 !important;
+}
+@font-face {
+  font-family: gilory;
+  src: url(/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: gilory-bold;
+  src: url(/Gilroy-ExtraBold.otf);
+}
+.home-sec {
+  background-image: url(/Bg.png);
+}
+/************ NavBar Css Start  ***********/
+
+.navbar {
+  background-color: transparent !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #6db225;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.5rem;
+  }
+}
+/************ NavBar Css End  ***********/
+/************ Hero Section Css Start  ***********/
+.hero-sec h1 {
+  font-family: gilory;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 126px;
+  color: #fff;
+}
+.spn-sty {
+  font-family: gilory-bold;
+}
+.hero-sec p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+}
+/* .hero-sec a{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #FFFFFF;
+padding: 20px 50px;
+border: 1px solid #fff;
+} */
+.button {
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  width: 180px;
+  z-index: 2;
+  border: 2px solid rgba(255, 255, 255, 0.274);
+}
+.button span {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 57px;
+  text-align: center;
+  color: #ffffff;
+}
+.button:hover + svg.border1 .bg-line,
+.button:active + svg.border1 .bg-line {
+  /* fill: #4f95d9; */
+}
+.button:hover + svg.border1 .hl-line,
+.button:active + svg.border1 .hl-line {
+  stroke: #fff;
+  stroke-dashoffset: -480;
+}
+
+svg.border1 {
+  fill: none;
+  stroke-width: 1;
+  margin-left: -7px;
+}
+svg.border1 .bg-line {
+  /* fill: #5ca4ea;
+  stroke: #91c9ff; */
+  transition: all 1s ease-in-out;
+}
+svg.border1 .hl-line {
+  stroke: #fff;
+  stroke-dasharray: 40 480;
+  stroke-dashoffset: 40;
+  transition: all 1s ease-in-out;
+}
+
+/************ Hero Section Css End  ***********/
+/************ Partners Section Css Star  ***********/
+.prtn-bg {
+  background-image: url(/prtn-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0px;
+}
+/************ Partners Section Css End  ***********/
+/************ About Section Css Start  ***********/
+.about-sec h2 {
+  font-family: gilory;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 70px;
+  color: #ffffff;
+}
+.about-sec p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about-pts {
+  background-color: #1b1b1b;
+  padding: 20px;
+}
+.about-pts h3 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+}
+.about-pts p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/************ About Section Css End  ***********/
+/************ Cards Section Css Start  ***********/
+.crd-head h2 {
+  font-family: gilory;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60px;
+  color: #ffffff;
+}
+.crd-head p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.crds {
+  margin-top: 120px;
+}
+.crd-1{
+  padding: 0px !important;
+}
+/* .crd-1 {
+  background-image: url(/crd1-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 97px 70px 40px 70px;
+}
+.crd-1 h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+.crd-1 p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.crd-2 {
+  background-image: url(/crd2-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 97px 70px 40px 70px;
+  margin-top: -225px;
+}
+.crd-2 h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+.crd-2 p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+.crd-3 {
+  background-image: url(/crd3-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 97px 70px 40px 70px;
+}
+.crd-3 h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+}
+.crd-3 p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.6;
+} */
+/************ Cards Section Css End  ***********/
+/************ Dashboard Section Css Start  ***********/
+.dashboard-sec h2 {
+  font-family: gilory;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 105px;
+  color: #ffffff;
+}
+/* Counter css  */
+.conter-pts h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffffff;
+}
+.conter-pts h3 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+}
+.conter-pts p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 35px;
+  color: #ffffff;
+  margin: 0px;
+}
+/************ Dashboard Section Css End  ***********/
+/************ Experience Section Css Start  ***********/
+.exp-sec h2 {
+  font-family: gilory;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 125px;
+  color: #ffffff;
+}
+.exp-sec p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+}
+/************ Experience Section Css End  ***********/
+/************ AiSolution Section Css Start  ***********/
+.ai-section h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 105px;
+  color: #ffffff;
+}
+.ai-section p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.btn-lst {
+  left: 860px;
+}
+/************ AiSolution Section Css End  ***********/
+/************ Footer Section Css Start  ***********/
+.foter-sec {
+  background-color: #1b1b1b;
+  padding: 15px 0px;
+}
+.foter-sec p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+  color: #ffffff;
+}
+.foter-sec p:hover {
+  color: #6db225;
+}
+/************ Footer Section Css End  ***********/
+
+/************ Mobile Section media querry start  ***********/
+
+@media only screen and (max-width: 767px) {
+  .br-hide {
+    display: none;
+  }
+  .hero-sec h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .hero-sec p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .about-sec h2 {
+    font-size: 55px;
+  }
+  .about-sec p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .crd-head h2 {
+    font-size: 35px;
+  }
+  .crd-head p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .dashboard-sec h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .conter-pts p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .exp-sec h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .exp-sec p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .ai-section h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .ai-section p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .crd-2 {
+    margin-top: 0px;
+  }
+  .btn-lst {
+    left: 105px;
+  }
+}
+/************ Mobile Section media querry End  ***********/
+/************ Tab Section media querry Start  ***********/
+@media (min-device-width: 768px) and (max-device-width: 1080px) {
+  .br-hide {
+    display: none;
+  }
+  .hero-sec h1 {
+    font-size: 43px;
+    line-height: 58px;
+    margin-top: 50px;
+  }
+  .hero-sec p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .prtn-bg {
+    margin-top: 50px;
+  }
+  .about-sec h2 {
+    font-size: 34px;
+  }
+  .about-sec p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  /* .crd-1 {
+    background-size: contain;
+    padding: 35px 35px 0px 35px;
+  }
+  .crd-2 {
+    background-size: contain;
+    margin-top: -72px;
+    padding: 14px 29px 0px 29px;
+  }
+  .crd-3 {
+    background-size: contain;
+    padding: 35px 35px 0px 35px;
+  }
+  .crd-1 h3 {
+    font-size: 20px;
+  }
+  .crd-2 h3 {
+    font-size: 17px;
+  }
+  .crd-3 h3 {
+    font-size: 20px;
+  }
+  .crd-1 img {
+    max-width: 40% !important;
+  }
+  .crd-2 img {
+    max-width: 40% !important;
+  }
+  .crd-3 img {
+    max-width: 40% !important;
+  }
+  .crd-1 p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+  }
+  .crd-2 p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+  }
+  .crd-3 p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px;
+  } */
+  .crds {
+    margin-top: 90px;
+  }
+  .dashboard-sec {
+    margin-top: 100px;
+  }
+  .dashboard-sec h2 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .conter-pts h2 {
+    font-size: 50px;
+  }
+  .conter-pts h3 {
+    font-size: 50px;
+  }
+  .conter-pts p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .exp-sec h2 {
+    font-size: 40px;
+    line-height: 57px;
+  }
+  .exp-sec p {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
+  .ai-section h2 {
+    font-size: 42px;
+    line-height: 55px;
+    margin-top: 100px;
+  }
+  .ai-section p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+  .btn-lst {
+    left: 400px;
+}
+}
+@media (min-device-width: 1081px) and (max-device-width: 1400px) {
+  .br-hide{
+    display: none;
+  }
+  .hero-sec{
+    margin-top: 100px;
+  }
+  .hero-sec h1{
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .hero-sec p{
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .prtn-bg{
+    margin-top: 100px;
+  }
+  .about-sec h2{
+    font-size: 42px;
+  }
+  .about-sec p{
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .crd-head{
+    margin-top: 100px;
+  }
+  .crds{
+    margin-top: 0px;
+  }
+  .dashboard-sec{
+    margin-top: 100px;
+  }
+  .dashboard-sec h2{
+    font-size: 49px;
+    line-height: 70px;
+  }
+  .conter-pts h2 {
+    font-size: 70px;
+  }
+  .conter-pts h3 {
+  font-size: 70px;
+  }
+  .conter-pts p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .exp-sec h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .exp-sec p {
+    font-size: 16px;
+    line-height: 30px;  
+  }
+  .ai-section{
+    margin-top: 100px;
+  }
+  .ai-section h2{
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .ai-section p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .btn-lst {
+    left: 470px;
+}
+.foter-sec {
+margin-top: 50px;
+}
+}
+@media (min-device-width: 1401px) and (max-device-width: 1599px) {
+  .hero-sec h1{
+    font-size: 80px;
+  }
+}
+/************ Tab Section media querry End  ***********/
+/************ Container custom media querry start  ***********/
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1550px;
+  }
+ 
+}
+/************ Container custom media querry End  ***********/
+
+
+/********** Dashboard Css Start  ********/
+/*********** SideBar Css Start  *********/
+.sidebar-menu>li>a {
+  padding: 15px 35px;
+
+
+}
+.is-collapsed .sidebar .sidebar-menu>li>a{
+  padding: 15px 15px;
+}
+.sidebar ul{
+  margin-top: 20px;
+}
+
+/*********** SideBar Css End  *********/
+
+
+
+
+
+/********** Dashboard Css End  ********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
